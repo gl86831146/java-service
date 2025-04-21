@@ -15,7 +15,7 @@ public class JavaServiceApplication {
     }
     @GetMapping("/list")
     public List<String> getList() {
-        return List.of("abc", "bsss", "cdd");
+        return List.of("aaaaa", "bbbbbb", "ccccc");
     }
 
 }
