@@ -1,8 +1,8 @@
 # 构建阶段
 FROM openjdk:17-slim AS build
-ENV HDME=/usr/app
+ENV HOME=/usr/app
 RUN mkdir -p HOME
-WORKDIR $HDME
+WORKDIR $HOME
 ADD . WORKDIR
 RUN --mount=type=cache,target=/root/.m2 ./mvnw -f $HOME/pom.xml clean package
 

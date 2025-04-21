@@ -1,6 +1,7 @@
 name: java-servie CI/CD
 on:
   push:
+    branches: [ main ]
 
 jobs:
   build-and-push:
